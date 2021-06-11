@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: url('https://www.miskawaanhealth.com/wp-content/uploads/2021/04/dirty-vs-clean-air.jpg') no-repeat center center/cover;
+}
+.container{
+    width: 60%;
+    margin: auto;
+    background-color: rgb(255, 235, 205);
+    /* height: 1000px; */
+    padding: 16px 0px;
+}
+#table{
+    width: 537px;
+    margin: auto;
+    background-color: rgb(15, 179, 0);
+    padding: 1rem;
+    padding-bottom: 2.5rem;
+    border-radius: 0px 0px 60px 60px;
+}
+table{
+    width: 90%;
+    margin: auto;
+    background-color:rgb(255,250,99);
+    padding: 1rem;
+    border-spacing: 0px 15px;
+    border-radius: 52px;
+}
+tr:hover{
+    background-color:rgb(245, 240, 94);
+}
+td{
+    /* border: 2px solid red; */
+    border-bottom: 2px solid rgb(194, 187, 0);
+    font-size: 20px;
+    padding: 10px 10px;
+}
+.heading{
+    padding: 20px;
+}
+.navbar{
+    display: flex;
+    /* border: 1px solid red; */
+    background-color: rgb(57, 204, 69);
+    justify-content: center;
+}
+li{
+    list-style: none;
+    /* border: 1px solid red; */
+}
+.links{
+    text-decoration: none;
+    color: black;
+    padding: 9px 47px;
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+}
+li:hover,.links:hover,#active{
+    animation: hoverer 500ms forwards ease-in;
+}
+@keyframes hoverer {
+    from{
+    }
+    to{
+        color: rgb(255, 223, 223);
+        background-color: rgb(15, 179, 0);
+    }
+}
+@media only screen and (max-width: 965px){
+
+    .container{
+        width: 100%;
+        background-color: rgba(255, 235, 205, 0.9);
+    }
+    .links{
+        font-size: 16px;
+        padding: 9px 18px;
+    }
+    #table{
+        width: 60%;
+        margin: auto;
+    }
+    td{
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 402px){
+
+    #table{
+        width: 241px;
+    }
+}
